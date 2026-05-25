@@ -102,8 +102,8 @@ export default function Calculator() {
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         .calc-page {
-          background: #0F172A;
-          color: #F8FAFC;
+          background: #f7efe6;
+          color: #0f172a;
           font-family: 'DM Sans', sans-serif;
           min-height: 100vh;
         }
@@ -165,8 +165,8 @@ export default function Calculator() {
 
         /* PROGRESS */
         .progress-bar-wrap {
-          background: #1E293B;
-          border: 1px solid #334155;
+          background: #fbf7f0;
+          border: 1px solid #e6e9ef;
           border-radius: 14px;
           padding: 18px 22px;
           margin-bottom: 20px;
@@ -178,7 +178,7 @@ export default function Calculator() {
         .progress-track {
           flex: 1;
           height: 6px;
-          background: #334155;
+          background: #e6e9ef;
           border-radius: 3px;
           overflow: hidden;
         }
@@ -192,8 +192,8 @@ export default function Calculator() {
 
         /* QUESTION CARD */
         .q-card {
-          background: #1E293B;
-          border: 1px solid #334155;
+          background: #fbf7f0;
+          border: 1px solid #e6e9ef;
           border-radius: 16px;
           padding: 28px 24px;
           margin-bottom: 16px;
@@ -205,11 +205,11 @@ export default function Calculator() {
         .q-options { display: flex; flex-direction: column; gap: 8px; }
         .q-option {
           padding: 12px 16px;
-          background: #0F172A;
-          border: 1px solid #334155;
+          background: #fbf7f0;
+          border: 1px solid #e6e9ef;
           border-radius: 10px;
           font-size: 0.88rem;
-          color: #CBD5E1;
+          color: #0f172a;
           cursor: pointer;
           text-align: left;
           font-family: 'DM Sans', sans-serif;
@@ -218,12 +218,12 @@ export default function Calculator() {
           align-items: center;
           gap: 10px;
         }
-        .q-option:hover { border-color: rgba(6,182,212,0.4); color: #F8FAFC; background: rgba(6,182,212,0.05); }
-        .q-option.selected { border-color: #06B6D4; background: rgba(6,182,212,0.1); color: #F8FAFC; }
+        .q-option:hover { border-color: rgba(6,182,212,0.4); background: rgba(6,182,212,0.03); }
+        .q-option.selected { border-color: #06B6D4; background: rgba(6,182,212,0.08); color: #0f172a; }
         .q-option-dot {
           width: 16px; height: 16px;
           border-radius: 50%;
-          border: 2px solid #334155;
+          border: 2px solid #cbd5e1;
           flex-shrink: 0;
           transition: border-color 0.2s, background 0.2s;
         }
@@ -251,12 +251,12 @@ export default function Calculator() {
         /* SIDEBAR */
         .sidebar { display: flex; flex-direction: column; gap: 20px; }
         .sidebar-card {
-          background: #1E293B;
-          border: 1px solid #334155;
+          background: #fbf7f0;
+          border: 1px solid #e6e9ef;
           border-radius: 16px;
           padding: 22px 20px;
         }
-        .sidebar-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.88rem; color: #F8FAFC; margin-bottom: 14px; }
+        .sidebar-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.88rem; color: #0f172a; margin-bottom: 14px; }
         .tip-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
         .tip-list li { display: flex; gap: 8px; font-size: 0.84rem; color: #94A3B8; line-height: 1.5; }
         .tip-list li::before { content: '💡'; flex-shrink: 0; }
@@ -266,7 +266,7 @@ export default function Calculator() {
 
         /* RESULT */
         .result-card {
-          background: #1E293B;
+          background: #fbf7f0;
           border: 1px solid;
           border-radius: 20px;
           padding: 36px 32px;
@@ -291,7 +291,7 @@ export default function Calculator() {
         .result-score-sub { font-size: 0.82rem; color: #64748B; margin-bottom: 24px; }
         .score-bar-track {
           height: 10px;
-          background: #334155;
+          background: #e6e9ef;
           border-radius: 5px;
           overflow: hidden;
           margin-bottom: 24px;
@@ -302,12 +302,12 @@ export default function Calculator() {
           transition: width 1s ease;
         }
         .result-advice {
-          background: #0F172A;
-          border: 1px solid #334155;
+          background: #f3efe9;
+          border: 1px solid #e6e9ef;
           border-radius: 12px;
           padding: 16px 18px;
           font-size: 0.88rem;
-          color: #CBD5E1;
+          color: #334155;
           line-height: 1.65;
           text-align: left;
           margin-bottom: 20px;
@@ -317,9 +317,9 @@ export default function Calculator() {
           width: 100%;
           padding: 13px;
           background: transparent;
-          border: 1px solid #334155;
+          border: 1px solid #e6e9ef;
           border-radius: 10px;
-          color: #94A3B8;
+          color: #475569;
           font-family: 'DM Sans', sans-serif;
           font-weight: 500;
           font-size: 0.9rem;
@@ -408,7 +408,7 @@ export default function Calculator() {
                   <div className="score-bar-fill" style={{ width: `${pct}%`, background: risk.color }} />
                 </div>
                 <div className="result-advice">
-                  <strong style={{ display: "block", marginBottom: 6, color: "#F8FAFC" }}>What you should do:</strong>
+                  <strong style={{ display: "block", marginBottom: 6, color: "#0f172a" }}>What you should do:</strong>
                   {risk.advice}
                 </div>
                 <div className="result-actions">
