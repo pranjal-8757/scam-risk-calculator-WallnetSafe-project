@@ -7,11 +7,11 @@ const questions = [
     id: "q1",
     question: "How did this contact reach you?",
     options: [
-      { label: "Phone Call (unknown number)", weight: 3 },
-      { label: "WhatsApp / SMS link", weight: 4 },
+      { label: "Phone Call (unknown number)", weight: 4 },
+      { label: "WhatsApp / SMS link", weight: 5 },
       { label: "Email from unknown sender", weight: 3 },
       { label: "Social media message", weight: 2 },
-      { label: "Video call from strangers", weight: 5 },
+      { label: "Video call from strangers", weight: 6 },
     ],
   },
   {
@@ -82,15 +82,24 @@ export default function Calculator() {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  const totalMax = questions.reduce((acc, q) => acc + Math.max(...q.options.map(o => o.weight)), 0);
-  const totalScore = Object.values(answers).reduce((a, b) => a + b, 0);
+  const totalMax = questions.reduce((acc, q) =>acc + q.options.reduce((sum, opt) => sum + opt.weight, 0), 0);  
+  const totalScore = Object.values(answers).flat().reduce((a, b) => a + b, 0);  
   const risk = getRiskLevel(totalScore, totalMax);
-  const pct = Math.round((totalScore / totalMax) * 100);
-  const answered = Object.keys(answers).length;
+  const pct = Math.min(100,Math.round((totalScore / totalMax) * 100));  
+  const answered = Object.keys(answers).filter((key) => answers[key].length > 0).length;
   const complete = answered === questions.length;
 
   const handleSelect = (qid, weight) => {
-    setAnswers(prev => ({ ...prev, [qid]: weight }));
+  setAnswers((prev) => {
+    const current = prev[qid] || [];
+
+    return {
+      ...prev,
+      [qid]: current.includes(weight)
+        ? current.filter((w) => w !== weight)
+        : [...current, weight],
+      };
+    });
   };
 
   const reset = () => { setAnswers({}); setSubmitted(false); };
@@ -222,11 +231,20 @@ export default function Calculator() {
         .q-option.selected { border-color: #06B6D4; background: rgba(6,182,212,0.08); color: #0f172a; }
         .q-option-dot {
           width: 16px; height: 16px;
-          border-radius: 50%;
+          border-radius: 4px;
           border: 2px solid #cbd5e1;
           flex-shrink: 0;
           transition: border-color 0.2s, background 0.2s;
         }
+
+        .q-option.selected .q-option-dot::after {
+          content: "✓";
+          color: white;
+          font-size: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }        
         .q-option.selected .q-option-dot { border-color: #06B6D4; background: #06B6D4; }
 
         /* SUBMIT */
@@ -379,7 +397,7 @@ export default function Calculator() {
                       {q.options.map(opt => (
                         <button
                           key={opt.label}
-                          className={`q-option${answers[q.id] === opt.weight ? " selected" : ""}`}
+                          className={`q-option${answers[q.id]?.includes(opt.weight) ? " selected" : ""}`}
                           onClick={() => handleSelect(q.id, opt.weight)}
                         >
                           <span className="q-option-dot" />
