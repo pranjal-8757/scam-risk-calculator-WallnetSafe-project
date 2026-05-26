@@ -309,7 +309,19 @@ export default function About() {
           transition: transform 0.2s, box-shadow 0.2s;
         }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(6,182,212,0.5); }
-      `}</style>
+        
+        /* ───────────────── RESPONSIVE DESIGN ───────────────── */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .pg-hero {
+    padding: 85px 22px 70px;
+  }
+
+  .
+     
+     `}</style>
 
       <div className="about-page">
 

@@ -362,6 +362,15 @@ export default function Calculator() {
           transition: filter 0.2s;
         }
         .btn-report:hover { filter: brightness(1.1); }
+      
+        /* ───────────────── RESPONSIVE DESIGN ───────────────── */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .calc-hero {
+    padding: 70px 22px 
+      
       `}</style>
 
       <div className="calc-page">

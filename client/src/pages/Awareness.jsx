@@ -309,6 +309,239 @@ export default function Awareness() {
           transition: transform 0.2s, box-shadow 0.2s;
         }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 36px rgba(6,182,212,0.5); }
+      
+      /* ───────────────── RESPONSIVE DESIGN ───────────────── */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .aw-hero {
+    padding: 85px 22px 60px;
+  }
+
+  .filter-bar {
+    margin: 0 20px 42px;
+    padding: 14px;
+  }
+
+  .aw-grid {
+    padding: 0 20px 70px;
+    gap: 18px;
+  }
+
+  .tip-banner {
+    padding: 42px 22px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .awareness-page {
+    overflow-x: hidden;
+  }
+
+  .aw-hero {
+    padding: 75px 18px 54px;
+  }
+
+  .pg-h1 {
+    line-height: 1.15;
+  }
+
+  .pg-sub {
+    max-width: 100%;
+    font-size: 0.92rem;
+  }
+
+  .filter-bar {
+    margin: 0 18px 38px;
+    padding: 14px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    font-size: 0.82rem;
+    padding: 9px 16px;
+  }
+
+  .aw-grid {
+    grid-template-columns: 1fr;
+    padding: 0 18px 60px;
+    gap: 18px;
+  }
+
+  .aw-card-header {
+    padding: 20px 18px;
+    gap: 14px;
+  }
+
+  .aw-card-body {
+    padding: 0 18px 20px;
+  }
+
+  .aw-card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.7rem;
+  }
+
+  .tip-banner {
+    padding: 38px 18px;
+  }
+
+  .tip-banner h3 {
+    font-size: 1.35rem;
+  }
+
+  .tip-banner p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+  .aw-hero {
+    padding: 60px 16px 46px;
+  }
+
+  .pg-tag {
+    font-size: 0.68rem;
+    padding: 4px 12px;
+  }
+
+  .pg-h1 {
+    font-size: 1.9rem;
+    line-height: 1.12;
+  }
+
+  .pg-sub {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .filter-bar {
+    margin: 0 16px 32px;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 14px;
+  }
+
+  .filter-btn {
+    width: 100%;
+    text-align: center;
+    padding: 11px 14px;
+    font-size: 0.82rem;
+  }
+
+  .aw-grid {
+    padding: 0 16px 50px;
+    gap: 16px;
+  }
+
+  .aw-card {
+    border-radius: 14px;
+  }
+
+  .aw-card-header {
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .aw-card-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .aw-card-title {
+    font-size: 0.92rem;
+    line-height: 1.35;
+  }
+
+  .aw-card-summary {
+    font-size: 0.83rem;
+    line-height: 1.55;
+  }
+
+  .risk-pill,
+  .cat-pill {
+    font-size: 0.64rem;
+    padding: 2px 8px;
+  }
+
+  .aw-card-body {
+    padding: 0 16px 18px;
+  }
+
+  .aw-how,
+  .red-flags li,
+  .what-todo-box p {
+    font-size: 0.82rem;
+  }
+
+  .what-todo-box {
+    padding: 12px 14px;
+    gap: 8px;
+  }
+
+  .aw-section-label {
+    margin: 16px 0 7px;
+  }
+
+  .tip-banner {
+    padding: 34px 16px;
+  }
+
+  .tip-banner h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .tip-banner p {
+    font-size: 0.86rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Small Phones */
+@media (max-width: 360px) {
+
+  .pg-h1 {
+    font-size: 1.7rem;
+  }
+
+  .aw-card-header {
+    padding: 16px 14px;
+  }
+
+  .aw-card-body {
+    padding: 0 14px 16px;
+  }
+
+  .filter-btn {
+    font-size: 0.78rem;
+    padding: 10px 12px;
+  }
+
+  .btn-primary {
+    font-size: 0.86rem;
+  }
+}
       `}</style>
 
       <div className="awareness-page">

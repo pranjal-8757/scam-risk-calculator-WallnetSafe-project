@@ -221,6 +221,236 @@ export default function Contact() {
         .notice-icon { font-size: 1.4rem; flex-shrink: 0; }
         .notice-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.9rem; color: #EF4444; margin-bottom: 4px; }
         .notice-text { font-size: 0.84rem; color: #94A3B8; line-height: 1.55; }
+      
+      /* ───────────────── RESPONSIVE DESIGN ───────────────── */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .pg-hero {
+    padding: 80px 22px 56px;
+  }
+
+  .channels-grid,
+  .contact-layout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-layout {
+    gap: 24px;
+  }
+
+  .form-card {
+    padding: 30px 26px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .pg-hero {
+    padding: 70px 18px 50px;
+  }
+
+  .pg-h1 {
+    line-height: 1.15;
+  }
+
+  .pg-sub {
+    max-width: 100%;
+    font-size: 0.92rem;
+  }
+
+  .channels-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 18px 48px;
+  }
+
+  .channel-card {
+    padding: 22px 18px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    padding: 0 18px 60px;
+    gap: 32px;
+  }
+
+  .form-card {
+    padding: 28px 22px;
+  }
+
+  .faq-title {
+    margin-bottom: 14px;
+  }
+
+  .notice-card {
+    margin-top: 20px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+  .contact-page {
+    overflow-x: hidden;
+  }
+
+  .pg-hero {
+    padding: 60px 16px 42px;
+  }
+
+  .pg-tag {
+    font-size: 0.68rem;
+    padding: 4px 12px;
+  }
+
+  .pg-h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .pg-sub {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .channels-grid {
+    padding: 0 16px 40px;
+    gap: 16px;
+  }
+
+  .channel-card {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .channel-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 1.5rem;
+  }
+
+  .channel-title {
+    font-size: 0.86rem;
+  }
+
+  .channel-value {
+    font-size: 0.95rem;
+  }
+
+  .channel-sub {
+    font-size: 0.76rem;
+  }
+
+  .contact-layout {
+    padding: 0 16px 50px;
+    gap: 28px;
+  }
+
+  .form-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+  }
+
+  .form-title {
+    font-size: 1.15rem;
+  }
+
+  .form-sub {
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 0.88rem;
+    padding: 11px 12px;
+  }
+
+  .form-textarea {
+    min-height: 110px;
+  }
+
+  .form-submit {
+    padding: 13px;
+    font-size: 0.92rem;
+  }
+
+  .faq-title {
+    font-size: 1rem;
+  }
+
+  .faq-q {
+    font-size: 0.88rem;
+  }
+
+  .faq-a {
+    font-size: 0.82rem;
+  }
+
+  .notice-card {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .notice-title {
+    font-size: 0.84rem;
+  }
+
+  .notice-text {
+    font-size: 0.8rem;
+  }
+
+  .success-state {
+    padding: 28px 12px;
+  }
+
+  .success-title {
+    font-size: 1.2rem;
+  }
+
+  .success-msg {
+    font-size: 0.86rem;
+  }
+}
+
+
+/* Small Phones */
+@media (max-width: 360px) {
+
+  .pg-h1 {
+    font-size: 1.7rem;
+  }
+
+  .form-card {
+    padding: 18px 14px;
+  }
+
+  .channel-card,
+  .notice-card {
+    padding: 16px 14px;
+  }
+
+  .form-submit {
+    font-size: 0.88rem;
+  }
+
+  .faq-q {
+    font-size: 0.84rem;
+  }
+}
+      
       `}</style>
 
       <div className="contact-page">

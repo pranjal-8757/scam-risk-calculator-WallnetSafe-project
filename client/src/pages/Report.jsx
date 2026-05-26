@@ -1009,6 +1009,342 @@ function PageStyles() {
         transition: border-color 0.2s, color 0.2s;
       }
       .btn-outline:hover { border-color: #06B6D4; color: #06B6D4; }
-    `}</style>
+
+      /* ───────────────── RESPONSIVE DESIGN ───────────────── */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+
+  .rp-hero {
+    padding: 80px 22px 56px;
+  }
+
+  .form-container {
+    padding: 36px 20px 70px;
+    gap: 22px;
+  }
+
+  .form-card {
+    padding: 30px 26px;
+  }
+
+  .success-box {
+    max-width: 90%;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .report-page {
+    overflow-x: hidden;
+  }
+
+  .rp-hero {
+    padding: 72px 18px 50px;
+  }
+
+  .pg-h1 {
+    line-height: 1.15;
+  }
+
+  .pg-sub {
+    max-width: 100%;
+    font-size: 0.92rem;
+  }
+
+  .emergency-strip {
+    padding: 14px 18px;
+  }
+
+  .es-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .es-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    padding: 32px 18px 60px;
+  }
+
+  .step-indicator {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .step-label {
+    font-size: 0.68rem;
+  }
+
+  .step-line {
+    width: 46px;
+  }
+
+  .form-card {
+    padding: 28px 22px;
+  }
+
+  .type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-sidebar {
+    width: 100%;
+  }
+
+  .success-page {
+    padding: 50px 18px;
+  }
+
+  .success-box {
+    padding: 36px 24px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+  .rp-hero {
+    padding: 60px 16px 44px;
+  }
+
+  .pg-tag {
+    font-size: 0.68rem;
+    padding: 4px 12px;
+  }
+
+  .pg-h1 {
+    font-size: 1.9rem;
+    line-height: 1.12;
+  }
+
+  .pg-sub {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .emergency-strip {
+    padding: 14px 16px;
+  }
+
+  .es-inner {
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .es-number {
+    font-size: 1.45rem;
+  }
+
+  .es-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    padding: 28px 16px 50px;
+    gap: 18px;
+  }
+
+  .form-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+  }
+
+  .step-heading {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .step-sub {
+    font-size: 0.84rem;
+    margin-bottom: 22px;
+  }
+
+  .type-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .type-btn {
+    padding: 16px 12px;
+  }
+
+  .type-icon {
+    font-size: 1.5rem;
+  }
+
+  .type-label {
+    font-size: 0.8rem;
+  }
+
+  .channel-btn {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .ch-label {
+    font-size: 0.86rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.88rem;
+    padding: 11px 12px;
+  }
+
+  .form-textarea {
+    min-height: 100px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+  }
+
+  .radio-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .anon-toggle {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .toggle-label {
+    font-size: 0.86rem;
+  }
+
+  .toggle-sub {
+    font-size: 0.74rem;
+  }
+
+  .review-item,
+  .review-desc-box,
+  .disclaimer-box,
+  .gov-cta {
+    padding: 14px;
+  }
+
+  .review-value,
+  .review-desc-text {
+    font-size: 0.84rem;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 0.92rem;
+  }
+
+  .form-nav {
+    flex-direction: column;
+  }
+
+  .nav-btn-back,
+  .nav-btn-next {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rp-sidebar-card {
+    padding: 18px 16px;
+  }
+
+  .hs-number {
+    font-size: 2rem;
+  }
+
+  .gov-link {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .success-page {
+    padding: 40px 16px;
+  }
+
+  .success-box {
+    padding: 30px 18px;
+    border-radius: 18px;
+  }
+
+  .success-title {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .success-msg {
+    font-size: 0.84rem;
+  }
+
+  .success-step {
+    padding: 12px;
+  }
+
+  .success-step p {
+    font-size: 0.8rem;
+  }
+
+  .sh-number {
+    font-size: 1.7rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.88rem;
+    padding: 12px;
+  }
+}
+
+
+/* Small Phones */
+@media (max-width: 360px) {
+
+  .pg-h1 {
+    font-size: 1.7rem;
+  }
+
+  .form-card {
+    padding: 18px 14px;
+  }
+
+  .type-btn,
+  .channel-btn {
+    padding: 14px 10px;
+  }
+
+  .step-heading {
+    font-size: 1rem;
+  }
+
+  .submit-btn,
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.84rem;
+  }
+
+  .hs-number,
+  .sh-number {
+    font-size: 1.5rem;
+  }
+}
+    
+      `}</style>
   );
 }
