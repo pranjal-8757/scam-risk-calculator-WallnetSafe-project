@@ -28,10 +28,7 @@ export default function Navbar() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
-
-        .hamburger {
-          display: none;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');          display: none;
         }
           html, body {
   overflow-x: hidden;
@@ -44,7 +41,7 @@ export default function Navbar() {
           background: #e8dccb;
           border-bottom: 1px solid #efe6db;
           transition: box-shadow 0.3s ease, background 0.3s ease;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
         }
         .nav-root.scrolled {
           background: rgba(247,239,230,0.98);
@@ -71,7 +68,7 @@ export default function Navbar() {
           border-radius:8px; display:flex; align-items:center; justify-content:center;
           font-size:18px; box-shadow:0 0 12px rgba(14,165,164,0.12);
         }
-        .nav-logo-text { font-family:'Syne',sans-serif; font-weight:800; font-size:1.15rem; color:#0f172a; }
+        .nav-logo-text { font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:1.15rem; color:#0f172a; }
         .nav-logo-text span {
           color: #2563eb;
         }

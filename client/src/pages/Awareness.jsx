@@ -81,13 +81,12 @@ export default function Awareness() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         .awareness-page {
           background: #f7efe6;
           color: #0f172a;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           min-height: 100vh;
         }
 
@@ -124,7 +123,7 @@ export default function Awareness() {
           margin-bottom: 18px;
         }
         .pg-h1 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 800;
           font-size: clamp(2rem, 4vw, 3rem);
           letter-spacing: -0.03em;
@@ -161,7 +160,7 @@ export default function Awareness() {
       border: 1px solid #e6e9ef;
 
       color: #475569;
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
       font-weight: 500;
 
@@ -223,7 +222,7 @@ export default function Awareness() {
         }
         .aw-card-meta { flex: 1; }
         .aw-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
-        .aw-card-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; }
+        .aw-card-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
         .risk-pill {
           padding: 2px 10px; border-radius: 6px;
           font-size: 0.7rem; font-weight: 700;
@@ -292,7 +291,7 @@ export default function Awareness() {
           margin-bottom: 0;
         }
         .tip-banner h3 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 800;
           font-size: 1.5rem;
           margin-bottom: 10px;
@@ -302,7 +301,7 @@ export default function Awareness() {
           display: inline-flex; align-items: center; gap: 8px;
           padding: 13px 26px;
           background: linear-gradient(135deg, #06B6D4, #0891b2);
-          color: #0F172A; font-family: 'DM Sans', sans-serif;
+          color: #0F172A; font-family: 'Inter', sans-serif;
           font-weight: 700; font-size: 0.95rem; border-radius: 10px;
           text-decoration: none;
           box-shadow: 0 0 20px rgba(6,182,212,0.28);

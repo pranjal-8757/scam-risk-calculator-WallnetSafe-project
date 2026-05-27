@@ -6,12 +6,11 @@ export default function Footer() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
         .footer-root {
           background: #e8dccb;
           border-top: 1px solid #efe6db;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           color: #475569;
         }
         .footer-main {
@@ -44,7 +43,7 @@ export default function Footer() {
           font-size: 16px;
         }
         .footer-logo-text {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 800;
           font-size: 1.1rem;
           color: #0f172a;
@@ -71,7 +70,7 @@ export default function Footer() {
         }
 
         .footer-col-title {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 700;
           font-size: 0.85rem;
           color: #0f172a;
@@ -116,7 +115,7 @@ export default function Footer() {
           margin-bottom: 16px;
         }
         .helpline-number {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-size: 2rem;
           font-weight: 800;
           color: #be123c;

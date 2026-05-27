@@ -25,13 +25,12 @@ export default function Contact() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         .contact-page {
           background: #f7efe6;
           color: #0f172a;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           min-height: 100vh;
         }
 
@@ -68,7 +67,7 @@ export default function Contact() {
           margin-bottom: 18px;
         }
         .pg-h1 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 800;
           font-size: clamp(2rem, 4vw, 2.8rem);
           letter-spacing: -0.03em;
@@ -105,7 +104,7 @@ export default function Contact() {
           display: flex; align-items: center; justify-content: center;
           flex-shrink: 0;
         }
-        .channel-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+        .channel-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
         .channel-value { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
         .channel-sub { font-size: 0.8rem; color: #64748B; }
 
@@ -128,7 +127,7 @@ export default function Contact() {
           padding: 36px 32px;
         }
         @media (max-width: 560px) { .form-card { padding: 24px 18px; } }
-        .form-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem; margin-bottom: 6px; }
+        .form-title { font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.3rem; margin-bottom: 6px; }
         .form-sub { font-size: 0.88rem; color: #64748B; margin-bottom: 28px; }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
         @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
@@ -140,7 +139,7 @@ export default function Contact() {
           border: 1px solid #e6e9ef;
           border-radius: 10px;
           color: #0f172a;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: 0.92rem;
           transition: border-color 0.2s, box-shadow 0.2s;
           outline: none;
@@ -156,7 +155,7 @@ export default function Contact() {
           padding: 14px;
           background: linear-gradient(135deg, #06B6D4, #0891b2);
           color: #0F172A;
-          font-family: 'Syne', sans-serif;
+          font-family: 'Space Grotesk', sans-serif;
           font-weight: 700;
           font-size: 0.98rem;
           border: none;
@@ -174,12 +173,12 @@ export default function Contact() {
           padding: 40px 20px;
         }
         .success-icon { font-size: 3rem; margin-bottom: 16px; }
-        .success-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.4rem; margin-bottom: 10px; color: #22C55E; }
+        .success-title { font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.4rem; margin-bottom: 10px; color: #22C55E; }
         .success-msg { font-size: 0.92rem; color: #94A3B8; line-height: 1.65; }
 
         /* FAQ */
         .faq-col { display: flex; flex-direction: column; gap: 0; }
-        .faq-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem; margin-bottom: 18px; }
+        .faq-title { font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.1rem; margin-bottom: 18px; }
         .faq-item {
           border-bottom: 1px solid #e6e9ef;
           padding: 16px 0;
@@ -219,7 +218,7 @@ export default function Contact() {
           align-items: flex-start;
         }
         .notice-icon { font-size: 1.4rem; flex-shrink: 0; }
-        .notice-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.9rem; color: #EF4444; margin-bottom: 4px; }
+        .notice-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.9rem; color: #EF4444; margin-bottom: 4px; }
         .notice-text { font-size: 0.84rem; color: #94A3B8; line-height: 1.55; }
       
       /* ───────────────── RESPONSIVE DESIGN ───────────────── */
